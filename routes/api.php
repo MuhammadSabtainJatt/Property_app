@@ -17,14 +17,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Artisan::call('migrate');
-Route::post('get_system_settings', [ApiController::class, 'get_system_settings']);
-Route::post('user_signup', [ApiController::class, 'user_signup']);
-Route::get('get_languages', [ApiController::class, 'get_languages']);
 Route::get('app_payment_status', [ApiController::class, 'app_payment_status']);
-Route::post('contct_us', [ApiController::class, 'contct_us']);
+Route::get('get_languages', [ApiController::class, 'get_languages']);
+Route::post('get_system_settings', [ApiController::class, 'get_system_settings']);
 Route::post('demo_signup', [ApiController::class, 'demo_signup']);
+Route::post('user_signup', [ApiController::class, 'user_signup']);
+Route::post('contct_us', [ApiController::class, 'contct_us']);
 
-Route::post('set_property_total_click', [ApiController::class, 'set_property_total_click']);
 Route::get('get_slider', [ApiController::class, 'get_slider']);
 Route::get('get_categories', [ApiController::class, 'get_categories']);
 Route::get('get_advertisement', [ApiController::class, 'get_advertisement']);
@@ -36,6 +35,7 @@ Route::get('get_property', [ApiController::class, 'get_property']);
 Route::get('get_nearby_properties', [ApiController::class, 'get_nearby_properties']);
 Route::get('get_app_settings', [ApiController::class, 'get_app_settings']);
 Route::get('get_seo_settings', [ApiController::class, 'get_seo_settings']);
+Route::post('set_property_total_click', [ApiController::class, 'set_property_total_click']);
 
 
 
